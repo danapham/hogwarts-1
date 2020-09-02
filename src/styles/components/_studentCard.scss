@@ -1,9 +1,5 @@
 @each $house, $house-color in $house-list {
   .student-#{$house} {
     @include card-layout($house, $house-color);
-
-    h2 {
-      @include text(lg, $white);
-    }
   }
 }
